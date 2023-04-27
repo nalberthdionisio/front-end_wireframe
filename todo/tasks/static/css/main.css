@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .container{
@@ -45,7 +46,7 @@
 
 
 .title-primary{
-    color:#fff; 
+    color:#2D9BF0; 
     font-size: 25px;
     font-weight: bold;
     text-transform: capitalize;
@@ -62,7 +63,7 @@
 .description-primary{
     font-size: 14px;
     font-weight: 300;
-    color: #fff;
+    color: #2D9BF0;
     line-height: 30px;
     padding: 10px 50px;
 
@@ -73,6 +74,7 @@
     color: black;
     line-height: 30px;
     display: flex;
+    padding-left: 100px;
     justify-content: end;
 }
 
@@ -80,18 +82,17 @@
     border-radius: 50px;
     border: none;
     text-transform: uppercase;
-    /* color: #fff; */
     font-size: 10px;
     width: 150px;
     height: 30px;
     cursor: pointer;
     background-color: transparent;
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid;
+    color: #2D9BF0;
 }
 
 .btn:hover{
-    background-color: #2D9BF0;
+    background-color: #fff;
     color: black;
 }
 
@@ -212,12 +213,7 @@
         left: 0;
         width: 40%;
     }
-
-    50%{
-        left: 30%;
-        width: 60%;
-    }
-
+    
     to{
         left: 60%;
         width: 40%;
@@ -228,11 +224,6 @@
     from{
         left: 60%;
         width: 40%;
-    }
-
-    50%{
-        left: 30%;
-        width: 60%;
     }
 
     to{
