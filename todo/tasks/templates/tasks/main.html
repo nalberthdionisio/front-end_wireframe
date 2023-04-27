@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESULTADO PREDIÇÃO</title>
+    <link rel="icon" type="image/x-icon" href="../../static/icons/enem.png">
+    <link rel="stylesheet" href='../../static/css/main.css' >
+</head>
+<body>
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <h3 class="title title-primary">Projeto de Machine Learning </h3>
+                <p class="description-primary">para predição das notas do ENEM</p>
+                {% comment %} <p>Forneça algumas informações e a nossa Machine Learning irá predizer suas notas do enem</p> {% endcomment %}
+                <button id="vamos"class="btn">vamos lá</button>
+            </div>
+            <div class="second-column">
+                <p>RESULTADO DA PREDIÇÃO</p>
+                {% comment %} <P>Com base nas informações inseridas e pela análuse dos dados do ENEM anteriores, a predição obteve uma acertividade de x%. suas notas serão:</P> {% endcomment %}
+                <div class="form-result">
+                    <input type="text" placeholder="Ciencias Humanas e suas Tecnologias">
+                    <input type="text" placeholder="Linguagem, Códigos e suas Tecnologias">
+                    <input type="text" placeholder="Matemática, Códigos e suas Tecnologias">
+                    <input type="text" placeholder="Ciências da Natureza e suas Tecnologias">
+                    <input type="text" placeholder="Redação">
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="content second-content">
+            <div class="first-column">
+                <p class="title title-second">PREDIÇÃO DAS NOTAS DO ENEM</p>
+                <p class="description-second">Selecione os dados abaixo para gerar a predição</p>
+                <div class="select">
+                    <select name="select1">
+                        <Option value='Cor/Raça'>Cor/Raça</Option>
+                        <Option value='Amarelo'>Amarelo</Option>
+                        <Option value='Branco'>Branco</Option>
+                        <Option value='Indígena'>Indígena</Option>
+                        <Option value='Pardo'>Pardo</Option>
+                        <Option value='Preto'>Preto</Option>
+                    </select>
+                    <select name="select2">
+                        <option value="Faixa etária">Faixa etária</option>
+                        <option value="15-19">15-19</option>
+                        <option value="20-24">20-24</option>
+                        <option value="25-29">25-29</option>
+                        <option value="30-35">30-35</option>
+                        <option value="36+">36+</option>
+                    </select>
+                    <select name="select3">
+                        <option value="Concluiu o ensino médio?">Concluiu o ensino médio?</option>
+                        <option value="Sim">Sim</option>
+                        <option value="Não">Não</option>
+                    </select>
+                    <select name="select4">
+                        <option value="Escolaridade da mãe">Escolaridade da mãe</option>
+                        <option value="ensino médio incompleto">ensino médio incompleto</option>
+                        <option value="ensino médio completo">ensino médio completo</option>
+                        <option value="Ensino superior incompleto">Ensino superior incompleto</option>
+                        <option value="Ensino superior completo">Ensino superior completo</option>
+                    </select>
+                    <select name="select5">
+                        <option value="Renda mensal">Renda mensal</option>
+                        <option value="R$0 - R$1.254">R$0 - R$1.254</option>
+                        <option value="R$1.255 - R$2.004">R$1.255 - R$2.004</option>
+                        <option value="R$2.005 - R$8.640">R$2.005 - R$8.640"</option>
+                        <option value="R$8.641 - R$11.261">R$8.641 - R$11.261</option>
+                        <option value="R$11.262 +">11.262 +</option>
+                    </select>
+                    <select name="select6">
+                        <option value="Tem acesso à internet?">Tem acesso à internet?</option>
+                        <option value="Não">Sim</option>
+                        <option value="Não">Não</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="second-column">
+                <h3 class="title title-primary">RESULTADO DA PREDIÇÃO</h3>
+                <P class="description-primary">Com base nas informações inseridas e pela análuse dos dados do ENEM anteriores, a predição obteve uma acertividade de x%. suas notas serão:</P>
+                <div class="btnPre">
+                    <button id="predizer"class="btn">Predizer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../static/js/main.js"></script>
+</body>
+</html>
